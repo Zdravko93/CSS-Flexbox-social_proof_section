@@ -33,10 +33,6 @@ body {
     margin: 0;
 }
 
-figure {
-    margin: 0;
-}
-
 blockquote {
     margin: 0;
 }
@@ -59,34 +55,34 @@ main {
     flex-direction: column;
     padding: 4rem 0rem;
 
-    position: relative;
+//     position: relative;
 }
 
-.bg-pattern-top {
-    background: url("images/bg-pattern-top-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+// .bg-pattern-top {
+//     background: url("images/bg-pattern-top-mobile.svg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    width: 70rem;
-    height: 50rem;
+//     width: 70rem;
+//     height: 50rem;
 
-    position: absolute;
-    top: -50%;
-    left: 10%;
-}
+//     position: absolute;
+//     top: -50%;
+//     left: 10%;
+// }
 
-.bg-pattern-bottom {
-    background: url("images/bg-pattern-bottom-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+// .bg-pattern-bottom {
+//     background: url("images/bg-pattern-bottom-mobile.svg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
 
-    width: 70rem;
-    height: 50rem;
+//     width: 70rem;
+//     height: 50rem;
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+// }
 
 .container {
     margin-inline: auto;
