@@ -29,8 +29,15 @@ body {
 }
 
 body {
-    font-family: 'League Spartan', sans-serif;
     margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+
+    background-image: url("images/bg-pattern-top-mobile.svg"),
+                      url("images/bg-pattern-bottom-mobile.svg");
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
 }
 
 blockquote {
@@ -44,7 +51,7 @@ img {
 }
 
 h1,
-h6,
+h2,
 p {
     margin: 0;
     text-align: center;
@@ -54,35 +61,8 @@ main {
     display: flex;
     flex-direction: column;
     padding: 4rem 0rem;
-
-//     position: relative;
 }
 
-// .bg-pattern-top {
-//     background: url("images/bg-pattern-top-mobile.svg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-
-//     width: 70rem;
-//     height: 50rem;
-
-//     position: absolute;
-//     top: -50%;
-//     left: 10%;
-// }
-
-// .bg-pattern-bottom {
-//     background: url("images/bg-pattern-bottom-mobile.svg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-
-//     width: 70rem;
-//     height: 50rem;
-
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-// }
 
 .container {
     margin-inline: auto;
@@ -173,13 +153,13 @@ main {
 
 .testimonial-card img {
     border-radius: 50%;
-    width: 40px;
+    width: 45px;
 }
 
 .user-data {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .user-name-title,
@@ -248,7 +228,7 @@ main {
     .users-feedback__stars {
         flex-direction: row;
         gap: 2rem;
-        
+
     }
 
     .users-feedback__stars:first-child {
@@ -266,7 +246,7 @@ main {
 
     .testimonial-card:nth-child(3) {
         transform: translateY(12%);
-    } 
+    }
 
     .testimonial-card:nth-child(2) {
         transform: translateY(6%);
@@ -274,6 +254,12 @@ main {
 }
 
 @media (min-width: 70em) {
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg"),
+                          url("images/bg-pattern-bottom-desktop.svg");
+
+    }
+
     .main-text,
     .user-name-title,
     .user-status,
@@ -284,7 +270,7 @@ main {
     .upper {
         gap: 10rem;
     }
-    
+
     .users-feedback__stars:first-child {
         transform: translateX(-16%);
     }
@@ -295,32 +281,5 @@ main {
 
     .users-feedback__stars p {
         font-size: $fs-text-small-media-q-specific;
-    }
-
-    
-    .bg-pattern-top {
-        background: url("images/bg-pattern-top-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        width: 70rem;
-        height: 50rem;
-    
-        position: absolute;
-        top: -50%;
-        left: 10%;
-    }
-
-    .bg-pattern-bottom {
-        background: url("images/bg-pattern-bottom-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        width: 70rem;
-        height: 50rem;
-    
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
 }
